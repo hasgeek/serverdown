@@ -14,29 +14,43 @@
   <!-- Included CSS Files -->
   <style type="text/css">
     body {
-      font: 14px/20px sans-serif;
-      text-rendering: optimizelegibility;
-      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .content-head {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid rgba(132,146,166,0.3);
+      background-color: #f9f9f9;
       text-align: center;
-      font-weight: 500;
+      margin-bottom: 24px;
     }
     h1 {
-      font-size: 39px;
+      font-size: 32px;
       font-weight: 500;
+      color: #4d5763;
     }
-    img {
-      max-width: 100%;
-      width: auto;
-      height: auto;
-      vertical-align: middle;
-      border: 0;
-      -ms-interpolation-mode: bicubic;
+    .emoticon {
+      height: 300px
+    }
+    @media(min-width: 768px) {
+      .emoticon {
+        height:400px
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      color: #1f2d3d;
     }
   </style>
 </head>
 <body>
-  <img src="https://serverdown.hasgeek.com/serverdown.jpg" />
-  <h1>Website overloaded</h1>
+  <div class="content-head">
+    <img src="error-503.svg" class="emoticon"/>
+    <h1>Website overloaded</h1>
+  </div>
   <p>We should be back in a few minutes. If it is taking longer, try again later or write to us at <a href="mailto:support@hasgeek.com">support@hasgeek.com</a> for updates.</p>
 </body>
 </html>
